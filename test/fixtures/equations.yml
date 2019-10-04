@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+   senior_cofficient: 1.5
+   avarage_cofficent: 1.5
+   free_cofficent: 1.5
+   discriminant: 1.5
+   first_root: 1.5
+   second_root: 1.5
+
+two:
+   senior_cofficient: 1.5
+   avarage_cofficent: 1.5
+   free_cofficent: 1.5
+   discriminant: 1.5
+   first_root: 1.5
+   second_root: 1.5
