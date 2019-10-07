@@ -26,7 +26,7 @@ class Editor extends React.Component {
     if (equations === null) return null;
 
     return (
-      <div>
+      <div className="grid">
         <Header />
         <EquationList equations={equations} />
       </div>

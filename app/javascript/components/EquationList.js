@@ -20,11 +20,11 @@ class EquationList extends React.Component {
         {equation.free_cofficent}
         {' = 0'}
         <li key={equation.first_root}>
-          {'First root:'} 
+          {'First root: '} 
           {equation.first_root}
         </li>
         <li key={equation.second_root}>
-          {' Second root:'} 
+          {' Second root: '} 
           {equation.second_root}
         </li>
       </ul>
@@ -33,7 +33,7 @@ class EquationList extends React.Component {
 
   render() {
     return (
-      <section>
+      <section className="equationList">
         <h2> History of computing </h2>
         <ul>{this.renderEquations()}</ul>
       </section>
