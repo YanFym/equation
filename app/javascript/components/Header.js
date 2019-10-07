@@ -2,7 +2,7 @@ import React from 'react';
 
 const Header = () => (
   <header>
-    <h1> Equations </h1>
+    <h1> Equation </h1>
   </header>
 );
 

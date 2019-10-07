@@ -60,6 +60,7 @@ end
 
 # Comfortable gems
 gem 'responders'
+gem 'pry'
 
 # Webpacker
 gem 'webpacker'

@@ -6,7 +6,7 @@ class EquationList extends React.Component {
     const { equations } = this.props;
   
     return equations.map(equation => (
-      <li key={equation.id}>
+      <ul key={equation.id}>
         {equation.senior_cofficient}
         {'x^2 '}
         {equation.avarage_cofficent >= 0 &&
@@ -19,14 +19,15 @@ class EquationList extends React.Component {
         }
         {equation.free_cofficent}
         {' = 0'}
-        <li key={equation.id}>
+        <li key={equation.first_root}>
           {'First root:'} 
           {equation.first_root}
-          {','}
+        </li>
+        <li key={equation.second_root}>
           {' Second root:'} 
           {equation.second_root}
         </li>
-      </li>
+      </ul>
     ));
   }
 
