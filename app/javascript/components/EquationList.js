@@ -1,12 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom';
 
 class EquationList extends React.Component {
   renderEquations() {
     const { equations } = this.props;
   
     return equations.map(equation => (
-      <ul key={equation.id}>
+      <li key={equation.id}>
         {equation.senior_cofficient}
         {'x^2 '}
         {equation.avarage_cofficent >= 0 &&
@@ -27,14 +28,17 @@ class EquationList extends React.Component {
           {' Second root: '} 
           {equation.second_root}
         </li>
-      </ul>
+      </li>
     ));
   }
 
   render() {
     return (
       <section className="equationList">
-        <h2> History of computing </h2>
+        <h2>
+          History of computing
+          <Link to="/equations/new">New Equation</Link>
+        </h2>
         <ul>{this.renderEquations()}</ul>
       </section>
     );
