@@ -1,8 +1,8 @@
 class Equation < ApplicationRecord
   def fetch_solution
   	fetch_discriminant
-  	first_root
-  	second_root
+  	fetch_first_root
+  	fetch_second_root
   end
 
   private
@@ -14,14 +14,14 @@ class Equation < ApplicationRecord
   		free_cofficent)
   end
 
-  def first_root
+  def fetch_first_root
   	update(first_root:
   		(-avarage_cofficent + 
   		Math.sqrt(discriminant))/
   		(2 * senior_cofficient))
   end
 
-  def second_root
+  def fetch_second_root
   	update(second_root:
   	    (-avarage_cofficent - 
   		Math.sqrt(discriminant))/
