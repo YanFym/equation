@@ -7,7 +7,6 @@ import { Switch } from 'react-router-dom';
 import EquationForm from './EquationForm';
 import PropsRoute from './PropsRoutes';
 import { handleAjaxError } from '../helpers/helper';
-import { success } from '../helpers/notifications';
 
 class Editor extends React.Component {
   constructor(props) {
@@ -24,7 +23,6 @@ class Editor extends React.Component {
     axios
       .post('/api/equations.json', newEquation)
       .then((response) => {
-        success('Equations Added!');
         const savedEquation = response.data;
         this.setState(prevState => ({
           equations: [...prevState.equations, savedEquation],

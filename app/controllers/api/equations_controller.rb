@@ -10,7 +10,7 @@ class Api::EquationsController < ApplicationController
   end
 
   def create
-    respond_with :api, Equation.create(equation_params)
+    respond_with :api, Equation.create(equation_params).fetch_solution
   end
 
   def destroy

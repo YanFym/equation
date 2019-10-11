@@ -3,6 +3,7 @@ class Equation < ApplicationRecord
   	fetch_discriminant
   	fetch_first_root
   	fetch_second_root
+    Equation.last
   end
 
   private
@@ -28,3 +29,6 @@ class Equation < ApplicationRecord
   		(2 * senior_cofficient))
   end
 end
+
+
+# Equation.create(senior_cofficient: '1', avarage_cofficent: '-2', free_cofficent: '-3')
