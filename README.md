@@ -1,24 +1,25 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Простое приложение для подсчёта квадратных уровнений и не только.
 
-Things you may want to cover:
+# Требования 
 
-* Ruby version
+* Ruby (version 2.6.3)
 
-* System dependencies
+* Node.js
 
-* Configuration
+# УСТАНОВКА
 
-* Database creation
+* Клонировать репозиторий
 
-* Database initialization
+* bundle install
 
-* How to run the test suite
+* yarn install
 
-* Services (job queues, cache servers, search engines, etc.)
+* rails db:create, rails db:migrate
 
-* Deployment instructions
+# ЗАПУСК
 
-* ...
+* rails s
+
+* перейти на http://localhost:3000
