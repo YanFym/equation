@@ -15,8 +15,8 @@ export const validateEquation = (equation) => {
     errors.avarage_cofficent = 'You must enter an avarage_cofficent correctly';
   }
 
-  if (equation.free_cofficient === '' || isNumber(equation.free_cofficient) == false) {
-    errors.free_cofficient = 'You must enter a free_cofficient correctly';
+  if (equation.free_cofficent === '' || isNumber(equation.free_cofficent) == false) {
+    errors.free_cofficent = 'You must enter a free_cofficent correctly';
   }
 
   return errors;
