@@ -11,22 +11,28 @@ class EquationList extends React.Component {
         {equation.senior_cofficient}
         {'x^2 '}
         {equation.avarage_cofficent >= 0 &&
-         '+ '
+          '+ '
         }
         {equation.avarage_cofficent}
         {'x '}
         {equation.free_cofficent >= 0 &&
-         '+ '
+          '+ '
         }
         {equation.free_cofficent}
         {' = 0'}
         <div>
           {'First root: '} 
           {equation.first_root}
+          {equation.first_root == null &&
+            'Does not exist'
+          }
         </div>
         <div>
           {' Second root: '} 
           {equation.second_root}
+          {equation.second_root == null &&
+            'Does not exist'
+          }
         </div>
       </li>
     )).reverse();

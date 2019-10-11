@@ -54,7 +54,7 @@ class EquationForm extends React.Component {
 
     return (
       <div className="errors">
-        <h3>Same errors detect</h3>
+        <h3>Some errors detect</h3>
         <ul>
           {Object.values(errors).map(error => (
             <li key={error}>{error}</li>

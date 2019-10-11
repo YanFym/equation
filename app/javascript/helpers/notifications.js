@@ -11,10 +11,6 @@ const defaults = {
 
 export { Alert };
 
-export const success = (message, options = {}) => {
-  Alert.success(message, Object.assign(defaults, options));
-};
-
 export const error = (message, options = {}) => {
   Alert.error(message, Object.assign(defaults, options));
 };
