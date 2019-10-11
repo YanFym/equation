@@ -21,6 +21,7 @@ body {
 header {
   background: #f57011;
   height: 60px;
+  width: 130px;
 }
 
 header h1, header h1 a{
@@ -37,10 +38,13 @@ header h1 a:hover {
   text-decoration: underline;
 }
 
-.grid {
-  display: grid;
-  grid-gap: 50px;
-  grid-template-columns: 25% auto;
+.input_fix {
+  width: 150px;
+  margin-left: auto;
+}
+
+.flex {
+  display: flex;
   margin: 25px auto;
   width: 90%;
   height: calc(100vh - 145px);
@@ -49,6 +53,9 @@ header h1 a:hover {
 .equationList {
   background: #f6f6f6;
   padding: 16px;
+  margin-left: 20px;
+  margin-right: 20px;
+  width: 300px;
 }
 
 .equationList h2 {
