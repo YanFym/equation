@@ -6,7 +6,7 @@ class EquationList extends React.Component {
   renderEquations() {
     const { equations } = this.props;
   
-    return equations.map(equation => (
+    return equations.slice(-4).map(equation => (
       <li key={equation.id}>
         {equation.senior_cofficient}
         {'x^2 '}
@@ -29,7 +29,7 @@ class EquationList extends React.Component {
           {equation.second_root}
         </div>
       </li>
-    ));
+    )).reverse();
   }
 
   render() {

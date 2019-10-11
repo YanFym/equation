@@ -70,15 +70,19 @@ class EquationForm extends React.Component {
 
     return (
       <div>
-        <h2>Equation</h2>
+        <h2>
+          Form of the quadratic equations:
+          aX^2 + bX + c = 0
+        </h2>
 
         {this.renderErrors()}
 
         <form className="equationForm" onSubmit={this.handleSubmit}>
           <div>
             <label htmlFor="senior_cofficient">
-              <strong>senior_cofficient:</strong>
+              <strong>Cofficent a:</strong>
               <input
+                className="input_fix"
                 type="text"
                 id="senior_cofficient"
                 name="senior_cofficient"
@@ -87,8 +91,9 @@ class EquationForm extends React.Component {
               />
             </label>
             <label htmlFor="avarage_cofficent">
-              <strong>avarage_cofficent:</strong>
+              <strong>Cofficent b:</strong>
               <input
+                className="input_fix"
                 type="text"
                 id="avarage_cofficent"
                 name="avarage_cofficent"
@@ -97,8 +102,9 @@ class EquationForm extends React.Component {
               />
             </label>
             <label htmlFor="free_cofficent">
-              <strong>free_cofficent:</strong>
+              <strong>Cofficent c:</strong>
               <input
+                className="input_fix"
                 type="text"
                 id="free_cofficent"
                 name="free_cofficent"

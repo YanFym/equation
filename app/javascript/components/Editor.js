@@ -45,7 +45,7 @@ class Editor extends React.Component {
     if (equations === null) return null;
 
     return (
-      <div className="grid">
+      <div className="flex">
         <Header />
         <EquationList equations={equations} />
         <Switch>
