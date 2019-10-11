@@ -20,14 +20,14 @@ class EquationList extends React.Component {
         }
         {equation.free_cofficent}
         {' = 0'}
-        <li key={equation.first_root}>
+        <div>
           {'First root: '} 
           {equation.first_root}
-        </li>
-        <li key={equation.second_root}>
+        </div>
+        <div>
           {' Second root: '} 
           {equation.second_root}
-        </li>
+        </div>
       </li>
     ));
   }
